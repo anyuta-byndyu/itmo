@@ -62,7 +62,7 @@ def func():
 func()
 '''
 #диаграмма
-file = open(r"C:\Users\annab\OneDrive\Documents\GitHub\dixit\src\17.txt")
+file = open("17.txt","r")
 '''
 a=[float(i) for i in file] #генератор списка. считывает все числа и переводит их из str во float
 list_negative = len([i for i in a if -10<=i<=-5]) # генератор списка проходит по всем занчениям файла и выбирает те, что удовлетворяют -10<=i<=-5
@@ -95,4 +95,5 @@ def loading():
         sys.stdout.write(u'\u001b[1000D'+bar)
         sys.stdout.flush()
     print(' Done!')
+
 loading()'''
